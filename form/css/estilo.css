@@ -1,0 +1,156 @@
+*,
+::after ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto";
+  background: #108dc7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ef8e38,
+    #108dc7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ef8e38,
+    #108dc7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background: #fff;
+  padding: 20px 0;
+  border-radius: 15px;
+  margin: auto;
+  width: 23%;
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+}
+
+.form {
+  width: 50%;
+  margin: auto;
+}
+
+form .todo {
+  position: relative;
+  margin: 17px;
+  justify-content: center;
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+}
+.dinos {
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+textarea {
+  background: none;
+  padding: 10px 10px 10px 5px;
+  border-radius: 20px;
+  display: block;
+  border-color: #108dc7;
+}
+textarea:focus {
+  outline: none;
+}
+
+input {
+  background: none;
+  color: rgb(12, 12, 12);
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  border-radius: 20px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #108dc7;
+}
+input:focus {
+  outline: none;
+}
+
+label {
+  color: #8fa2ac;
+  position: absolute;
+  top: 10px;
+  left: -12px;
+  font-size: 15px;
+  transition: 0.5s ease-in-out all;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -17px;
+  font-size: 13px;
+  color: #108dc7;
+}
+
+.ldinos {
+  color: #8fa2ac;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  font-size: 20px;
+  transition: 0.5s ease-in-out all;
+}
+
+textarea:focus ~ .ldinos,
+textarea:valid ~ .ldinos {
+  top: -17px;
+  font-size: 13px;
+  color: #108dc7;
+}
+
+button {
+  font-family: "roboto";
+  background: #108dc7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ef8e38,
+    #108dc7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ef8e38,
+    #108dc7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border: none;
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  color: #fff;
+  height: 40px;
+  font-size: 17px;
+  cursor: pointer;
+}
+button:hover {
+  background: #00b09b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #96c93d,
+    #00b09b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #96c93d,
+    #00b09b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    width: 80%;
+  }
+}
